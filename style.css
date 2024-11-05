@@ -1,6 +1,8 @@
-/* style.css */
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    box-sizing: border-box; /* Ensures padding is included in width/height */
+}
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -31,7 +33,7 @@ body {
 
 .left-section {
     background: linear-gradient(135deg, #333, #1c1b29);
-    padding: 30px;
+    padding: 30px 20px; /* Adds more padding on left and right */
     width: 35%;
     display: flex;
     flex-direction: column;
@@ -61,14 +63,15 @@ body {
 
 .left-section p {
     font-size: 0.9em;
-    line-height: 1.6;
+    line-height: 1.8;
     text-align: justify;
     color: #e0e0e0;
-    padding: 0 10px;
+    padding: 0 10px; /* Extra padding within paragraphs */
+    margin: 10px 0;
 }
 
 .right-section {
-    padding: 40px;
+    padding: 30px 20px; /* Adds more padding on left and right */
     width: 65%;
     color: #f4f4f4;
     background: #1f1a30;
@@ -165,6 +168,6 @@ a:hover {
 
     .left-section, .right-section {
         width: 100%;
-        padding: 20px;
+        padding: 20px; /* Adjusted padding for smaller screens */
     }
 }
